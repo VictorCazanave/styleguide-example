@@ -1,0 +1,15 @@
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: 1.5;
+}
+
+:focus {
+  // Use box shadow instead of outline to follow border radius
+  outline: 0;
+  box-shadow: 0 0 0 2px $white, 0 0 0 4px $grey;
+}
+
+:disabled {
+  cursor: not-allowed;
+}

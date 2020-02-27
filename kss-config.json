@@ -1,0 +1,8 @@
+{
+	"source": "./src",
+	"css": "../dist/main.css",
+	"homepage": "./template/homepage.md",
+	"builder": "./template",
+	"placeholder": "",
+	"custom": "link"
+}

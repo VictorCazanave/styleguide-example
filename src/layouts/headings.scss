@@ -1,0 +1,51 @@
+/*
+Headings
+
+The standard headings to indicate the title of the different sections.
+
+Styleguide: layouts.headings
+
+Markup: <h1>Heading Level 1</h1>
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5>
+<h6>Heading Level 6</h6>
+
+Weight: 0
+*/
+h1 {
+  font-family: $font-family-title;
+  font-size: $font-size * 3.85;
+  font-weight: $font-weight-bold;
+}
+
+h2 {
+  font-family: $font-family-title;
+  font-size: $font-size * 2.75;
+  font-weight: $font-weight-bold;
+}
+
+h3 {
+  font-family: $font-family-title;
+  font-size: $font-size * 2.2;
+  font-weight: $font-weight-bold;
+}
+
+h4 {
+  font-family: $font-family-title;
+  font-size: $font-size * 1.8;
+  font-weight: $font-weight-bold;
+}
+
+h5 {
+  font-family: $font-family-title;
+  font-size: $font-size * 1.6;
+  font-weight: $font-weight-bold;
+}
+
+h6 {
+  font-family: $font-family-title;
+  font-size: $font-size * 1.4;
+  font-weight: $font-weight-bold;
+}

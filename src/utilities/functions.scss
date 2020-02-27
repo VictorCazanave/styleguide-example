@@ -1,0 +1,29 @@
+/*
+Functions
+
+The custom SCSS functions.
+
+Styleguide: utilities.functions
+*/
+
+/*
+color-code($color)
+
+Returns the code of the color to inject it in an svg background.
+
+For example: <code>color-code(#001122)</code> returns <code>"001122"</code>.
+
+$color - The color to decode
+
+Link: https://github.com/alsacreations/KNACSS/blob/master/sass/components/_checkbox.scss#L84
+
+Styleguide: utilities.functions.color-code
+*/
+@function color-code($color) {
+	$red: red($color);
+	$green: green($color);
+	$blue: blue($color);
+	$rgb: rgb($red, $green, $blue);
+
+	@return str-slice(ie-hex-str($rgb), 4);
+}

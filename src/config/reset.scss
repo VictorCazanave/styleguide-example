@@ -1,0 +1,97 @@
+/* CSS Reset */
+
+// Switch to border-box model for all elements
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+blockquote,
+a,
+img,
+ol,
+ul,
+li,
+button,
+fieldset,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+input,
+select {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+// HTML5 display-role reset for older browsers
+// TODO: Check if necessary for supported browsers
+article,
+aside,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+	display: block;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+	border-style: none;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+	background: none;
+	outline: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
