@@ -20,6 +20,7 @@
 		"dev:watch": "chokidar src/* src/**/* template/* --command 'npm run build' --initial --verbose",
 		"dev:sync": "browser-sync start --config bs-config.js",
 		"dev": "run-p dev:*",
+		"lint": "stylelint src/**/*.scss template/*.scss",
 		"build:style:css": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/main.scss dist/main.css",
 		"build:style:prefix": "postcss dist/main.css --replace --use autoprefixer",
 		"build:style": "run-s build:style:*",
