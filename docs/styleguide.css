@@ -59,7 +59,7 @@ Styleguide: colors
           font-weight: 400; }
   #kss-body .main {
     flex: 1 1 auto;
-    padding: 1.25rem 6.25rem; }
+    padding: 1.25rem 6.25rem 2.5rem; }
     #kss-body .main__content {
       margin: 0 auto;
       width: 50rem; }
