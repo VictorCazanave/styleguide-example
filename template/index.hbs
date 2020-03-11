@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="An example of style guide" />
+  <meta name="description" content="An example of living style guide using KSS" />
   <meta name="generator" content="kss-node" />
   <meta name="viewport" content="width=device-width" />
 
@@ -18,7 +18,7 @@
   <header class="sidebar">
 
     <h1 class="sidebar__title">
-      Style Guide
+      Style Guide Example
     </h1>
 
     <nav>
@@ -36,8 +36,9 @@
           {{#if children}}
           <ul class="menu__children">
             {{#each children}}
-            <li class="menu__children__item {{#if isGrandChild}}menu__children__item--sub{{/if}}">
-              <a href="section-{{../referenceURI}}.html#kssref-{{referenceURI}}">
+            <li>
+              <a class="menu__children__item {{#if isGrandChild}}menu__children__item--sub{{/if}}"
+                href="section-{{../referenceURI}}.html#kssref-{{referenceURI}}">
                 {{header}}
               </a>
             </li>
@@ -58,8 +59,8 @@
       {{else}}
 
       {{#each sections}}
-      <h{{depth}} class="main__content__title main__content__title--level-{{depth}}" id="kssref-{{referenceURI}}">
-        <a class="main__content__title__permalink" href="#kssref-{{referenceURI}}">
+      <h{{depth}} id="kssref-{{referenceURI}}">
+        <a class="main__content__permalink" href="#kssref-{{referenceURI}}">
           {{header}}
         </a>
       </h{{depth}}>
@@ -141,7 +142,8 @@
       {{#if source.filename}}
       <div class="source">
         Source:
-        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/{{source.filename}}#L{{source.line}}" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/{{source.filename}}#L{{source.line}}"
+          target="_blank" rel="noopener noreferrer">
           <code>{{source.filename}}, line {{source.line}}</code>
         </a>
       </div>

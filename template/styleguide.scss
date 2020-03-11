@@ -13,13 +13,6 @@ $grey-light: rgb(230, 230, 230);
 	font-size: $font-size;
 	line-height: 1.5;
 
-	a {
-		&:focus,
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-
 	.sidebar {
 		flex: rem(0 0 400px);
 		padding: rem(20px 30px);
@@ -28,29 +21,47 @@ $grey-light: rgb(230, 230, 230);
 
 		&__title {
 			margin-bottom: rem(20px);
+			padding-bottom: rem(20px);
+			border-bottom: rem(2px solid $black);
 			font-family: $font-family-title;
-			font-size: rem(45px);
+			font-size: rem(40px);
 			font-weight: $font-weight-bold;
 			text-transform: uppercase;
 		}
 	}
 
 	.menu {
+		list-style: none;
+
 		&__item {
 			display: block;
 			margin-top: rem(30px);
 			font-family: $font-family-title;
 			font-size: rem(30px);
 			font-weight: $font-weight-bold;
+			text-decoration: none;
 			text-transform: uppercase;
+
+			&:focus,
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 
 		&__children {
+			list-style: none;
+
 			&__item {
 				display: block;
 				margin-top: rem(15px);
 				font-size: rem(22px);
 				font-weight: $font-weight-bold;
+				text-decoration: none;
+
+				&:focus,
+				&:hover {
+					text-decoration: underline;
+				}
 
 				&--sub {
 					margin-top: 0;
@@ -69,25 +80,13 @@ $grey-light: rgb(230, 230, 230);
 			margin: 0 auto;
 			width: rem(800px);
 
-			&__title {
-				&--level-1 {
-					margin-bottom: rem(40px);
-				}
+			&__permalink {
+				text-decoration: none;
 
-				&--level-2 {
-					margin: rem(40px 0 20px 0);
-				}
-
-				&--level-3 {
-					margin: rem(40px 0 20px 0);
-				}
-
-				&__permalink {
-					&:focus,
-					&:hover {
-						color: $grey;
-						text-decoration: none;
-					}
+				&:focus,
+				&:hover {
+					color: $grey;
+					text-decoration: none;
 				}
 			}
 		}
@@ -102,6 +101,7 @@ $grey-light: rgb(230, 230, 230);
 		align-items: stretch;
 		flex-wrap: wrap;
 		font-size: $font-size-small;
+		list-style: none;
 
 		&__item {
 			flex: 0 0 auto;

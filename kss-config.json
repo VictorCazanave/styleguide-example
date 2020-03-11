@@ -1,7 +1,7 @@
 {
 	"source": "./src",
 	"css": "../dist/main.css",
-	"homepage": "./template/homepage.md",
+	"homepage": "README.md",
 	"builder": "./template",
 	"placeholder": "",
 	"custom": "link"

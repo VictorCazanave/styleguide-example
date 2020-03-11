@@ -15,36 +15,42 @@ Markup: <h1>Heading Level 1</h1>
 Weight: 0
 */
 h1 {
+	margin-bottom: rem(40px);
 	font-family: $font-family-title;
 	font-size: $font-size * 3.85;
 	font-weight: $font-weight-bold;
 }
 
 h2 {
+	margin: rem(40px 0 20px 0);
 	font-family: $font-family-title;
 	font-size: $font-size * 2.75;
 	font-weight: $font-weight-bold;
 }
 
 h3 {
+	margin: rem(40px 0 20px 0);
 	font-family: $font-family-title;
 	font-size: $font-size * 2.2;
 	font-weight: $font-weight-bold;
 }
 
 h4 {
+	margin: rem(20px 0 10px 0);
 	font-family: $font-family-title;
 	font-size: $font-size * 1.8;
 	font-weight: $font-weight-bold;
 }
 
 h5 {
+	margin: rem(20px 0 10px 0);
 	font-family: $font-family-title;
 	font-size: $font-size * 1.6;
 	font-weight: $font-weight-bold;
 }
 
 h6 {
+	margin: rem(10px 0 5px 0);
 	font-family: $font-family-title;
 	font-size: $font-size * 1.4;
 	font-weight: $font-weight-bold;
