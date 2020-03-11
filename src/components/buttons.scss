@@ -1,4 +1,4 @@
-/* 
+/*
 Buttons
 
 The standard buttons.
@@ -6,12 +6,12 @@ The standard buttons.
 Styleguide: components.buttons
 */
 .button {
-  font-size: rem(16px);
-  font-weight: $font-weight-bold;
-  border-radius: $border-radius;
-  cursor: pointer;
+	font-size: rem(16px);
+	font-weight: $font-weight-bold;
+	border-radius: $border-radius;
+	cursor: pointer;
 
-  /*
+	/*
 	Primary button
 
 	A standard button for the main action on the page.
@@ -20,21 +20,21 @@ Styleguide: components.buttons
 	:disabled - Grays out when disabled
 
 	Styleguide: components.buttons.primary
-	
+
 	Markup: <button class="button primary {{ modifier_class }}">Apply</button>
 	*/
-  &.primary {
-    padding: rem(10px 15px);
-    border: none;
-    background-color: $black;
-    color: $white;
+	&.primary {
+		padding: rem(10px 15px);
+		border: none;
+		background-color: $black;
+		color: $white;
 
-    &:disabled {
-      background-color: $grey;
-    }
-  }
+		&:disabled {
+			background-color: $grey;
+		}
+	}
 
-  /*
+	/*
 	Secondary button
 
 	A standard button for the secondary action on the page.
@@ -43,18 +43,18 @@ Styleguide: components.buttons
 	:disabled - Grays out when disabled
 
 	Styleguide: components.buttons.secondary
-	
+
 	Markup: <button class="button secondary {{ modifier_class }}">Cancel</button>
 	*/
-  &.secondary {
-    padding: rem(8px 15px);
-    border: rem(2px solid $black);
-    background-color: $white;
-    color: $black;
+	&.secondary {
+		padding: rem(8px 15px);
+		border: rem(2px solid $black);
+		background-color: $white;
+		color: $black;
 
-    &:disabled {
-      border-color: $grey;
-      color: $grey;
-    }
-  }
+		&:disabled {
+			border-color: $grey;
+			color: $grey;
+		}
+	}
 }

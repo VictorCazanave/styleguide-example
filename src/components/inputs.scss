@@ -1,4 +1,4 @@
-/* 
+/*
 Inputs
 
 The standard inputs.
@@ -7,23 +7,23 @@ Styleguide: components.inputs
 */
 
 .box {
-  border: rem(1px solid $black);
-  border-radius: $border-radius;
-  background-color: $white;
-  color: $black;
-  font-size: rem(16px);
-  line-height: 1;
+	border: rem(1px solid $black);
+	border-radius: $border-radius;
+	background-color: $white;
+	color: $black;
+	font-size: rem(16px);
+	line-height: 1;
 
-  &:disabled {
-    border-color: $grey;
-    color: $grey;
-  }
+	&:disabled {
+		border-color: $grey;
+		color: $grey;
+	}
 
-  &::placeholder {
-    color: $grey;
-  }
+	&::placeholder {
+		color: $grey;
+	}
 
-  /*
+	/*
 	Text box
 
 	A standard text box.
@@ -31,17 +31,17 @@ Styleguide: components.inputs
 	:focus    - Highlights when focused
 	:disabled - Grays out when disabled
 
-	Styleguide: components.inputs.textbox
-	
+  Styleguide: components.inputs.textbox
+
   Markup: <input type="text" placeholder="Enter a text" class="box text {{ modifier_class }}"/>
-  
+
 	Weight: 0
 	*/
-  &.text {
-    padding: rem(10px 15px);
-  }
+	&.text {
+		padding: rem(10px 15px);
+	}
 
-  /*
+	/*
 	Search box
 
 	A standard search box.
@@ -50,37 +50,37 @@ Styleguide: components.inputs
 	:disabled - Grays out when disabled
 
 	Styleguide: components.inputs.searchbox
-	
+
 	Markup: <input type="search" placeholder="Search something" class="box search {{ modifier_class }}"/>
 
 	Weight: 1
 	*/
-  &.search {
-    padding: rem(10px 15px 10px 35px);
-    border-radius: rem(1000px);
-    @include background-search($black);
-    background-repeat: no-repeat;
-    background-size: rem(15px);
-    background-position: rem(15px 50%);
+	&.search {
+		padding: rem(10px 15px 10px 35px);
+		border-radius: rem(1000px);
+		@include background-search($black);
+		background-repeat: no-repeat;
+		background-size: rem(15px);
+		background-position: rem(15px 50%);
 
-    // Remove default style on Safari
-    // https://stackoverflow.com/a/34802612
-    -webkit-appearance: textfield;
+		// Remove default style on Safari
+		// https://stackoverflow.com/a/34802612
+		-webkit-appearance: textfield;
 
-    // Remove default clear button
-    &::-webkit-search-decoration,
-    &::-webkit-search-cancel-button,
-    &::-webkit-search-results-button,
-    &::-webkit-search-results-decoration {
-      display: none;
-    }
+		// Remove default clear button
+		&::-webkit-search-decoration,
+		&::-webkit-search-cancel-button,
+		&::-webkit-search-results-button,
+		&::-webkit-search-results-decoration {
+			display: none;
+		}
 
-    &:disabled {
-      @include background-search($grey);
-    }
-  }
+		&:disabled {
+			@include background-search($grey);
+		}
+	}
 
-  /*
+	/*
 	Select
 
 	A standard select.
@@ -89,41 +89,41 @@ Styleguide: components.inputs
 	:disabled - Grays out when disabled
 
 	Styleguide: components.inputs.select
-	
+
 	Markup: <select class="box select {{ modifier_class }}">
 		<option value="" disabled selected>Select an option</option>
 		<option value="1">Option 1</option>
 		<option value="2">Option 2</option>
   </select>
-  
+
 	Weight: 2
 	*/
-  &.select {
-    position: relative;
-    padding: rem(10px 45px 10px 15px);
-    @include background-select($black);
-    background-repeat: no-repeat;
-    background-size: rem(25px);
-    background-position: rem(top 50% right 15px);
-    cursor: pointer;
+	&.select {
+		position: relative;
+		padding: rem(10px 45px 10px 15px);
+		@include background-select($black);
+		background-repeat: no-repeat;
+		background-size: rem(25px);
+		background-position: rem(top 50% right 15px);
+		cursor: pointer;
 
-    // Remove default style
-    appearance: none;
+		// Remove default style
+		appearance: none;
 
-    // Remove default style on IE
-    &::-ms-expand {
-      display: none;
-    }
+		// Remove default style on IE
+		&::-ms-expand {
+			display: none;
+		}
 
-    &:disabled {
-      @include background-select($grey);
-    }
+		&:disabled {
+			@include background-select($grey);
+		}
 
-    // Option as placeholder
-    [value=""] {
-      color: $grey;
-    }
-  }
+		// Option as placeholder
+		[value=""] {
+			color: $grey;
+		}
+	}
 }
 
 // Common styles for checkbox and radio
@@ -131,20 +131,20 @@ Styleguide: components.inputs
 // /!\ Cannot use border on input on IE
 // /!\ Cannot use pseudo-elements on input on IE: https://stackoverflow.com/a/37843857/9826498
 .choice {
-  width: $choice-size;
-  min-width: $choice-size; // To avoid shrink in flex container
-  height: $choice-size;
-  background-size: $choice-size;
-  outline: 0;
-  appearance: none;
-  cursor: pointer;
+	width: $choice-size;
+	min-width: $choice-size; // To avoid shrink in flex container
+	height: $choice-size;
+	background-size: $choice-size;
+	outline: 0;
+	appearance: none;
+	cursor: pointer;
 
-  // Remove default style on IE
-  &::-ms-check {
-    display: none;
-  }
+	// Remove default style on IE
+	&::-ms-check {
+		display: none;
+	}
 
-  /*
+	/*
 	Checkbox
 
 	A standard checkbox.
@@ -156,29 +156,29 @@ Styleguide: components.inputs
 	:checked:disabled - Grays out when checked and disabled
 
 	Styleguide: components.inputs.checkbox
-	
+
 	Markup: <input type="checkbox" class="choice check {{ modifier_class }}"/>
 
 	Weight: 3
 	*/
-  &.check {
-    border-radius: $border-radius;
-    @include background-checkbox($black);
+	&.check {
+		border-radius: $border-radius;
+		@include background-checkbox($black);
 
-    &:disabled {
-      @include background-checkbox($grey);
-    }
+		&:disabled {
+			@include background-checkbox($grey);
+		}
 
-    &:checked {
-      @include background-checkbox-checked($black);
+		&:checked {
+			@include background-checkbox-checked($black);
 
-      &:disabled {
-        @include background-checkbox-checked($grey);
-      }
-    }
-  }
+			&:disabled {
+				@include background-checkbox-checked($grey);
+			}
+		}
+	}
 
-  /*
+	/*
 	Radio button
 
 	A standard radio button.
@@ -190,25 +190,25 @@ Styleguide: components.inputs
 	:checked:disabled - Grays out when checked and disabled
 
 	Styleguide: components.inputs.radio
-	
+
 	Markup: <input type="radio" class="choice radio {{ modifier_class }}"/>
 
 	Weight: 4
 	*/
-  &.radio {
-    border-radius: 50%;
-    @include background-radio($black);
+	&.radio {
+		border-radius: 50%;
+		@include background-radio($black);
 
-    &:disabled {
-      @include background-radio($grey);
-    }
+		&:disabled {
+			@include background-radio($grey);
+		}
 
-    &:checked {
-      @include background-radio-checked($black);
+		&:checked {
+			@include background-radio-checked($black);
 
-      &:disabled {
-        @include background-radio-checked($grey);
-      }
-    }
-  }
+			&:disabled {
+				@include background-radio-checked($grey);
+			}
+		}
+	}
 }

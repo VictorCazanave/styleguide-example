@@ -5,199 +5,199 @@ $font-size-small: rem(16px);
 $grey-light: rgb(230, 230, 230);
 
 #kss-body {
-  display: flex;
-  align-items: stretch;
-  background-color: $white;
-  color: $black;
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: 1.5;
+	display: flex;
+	align-items: stretch;
+	background-color: $white;
+	color: $black;
+	font-family: $font-family;
+	font-size: $font-size;
+	line-height: 1.5;
 
-  a {
-    &:focus,
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+	a {
+		&:focus,
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 
-  .sidebar {
-    flex: rem(0 0 400px);
-    padding: rem(20px 30px);
-    border-right: rem(2px dashed $black);
-    text-align: center;
+	.sidebar {
+		flex: rem(0 0 400px);
+		padding: rem(20px 30px);
+		border-right: rem(2px dashed $black);
+		text-align: center;
 
-    &__title {
-      margin-bottom: rem(20px);
-      font-family: $font-family-title;
-      font-size: rem(45px);
-      font-weight: $font-weight-bold;
-      text-transform: uppercase;
-    }
-  }
+		&__title {
+			margin-bottom: rem(20px);
+			font-family: $font-family-title;
+			font-size: rem(45px);
+			font-weight: $font-weight-bold;
+			text-transform: uppercase;
+		}
+	}
 
-  .menu {
-    &__item {
-      display: block;
-      margin-top: rem(30px);
-      font-family: $font-family-title;
-      font-size: rem(30px);
-      font-weight: $font-weight-bold;
-      text-transform: uppercase;
-    }
+	.menu {
+		&__item {
+			display: block;
+			margin-top: rem(30px);
+			font-family: $font-family-title;
+			font-size: rem(30px);
+			font-weight: $font-weight-bold;
+			text-transform: uppercase;
+		}
 
-    &__children {
-      &__item {
-        display: block;
-        margin-top: rem(15px);
-        font-size: rem(22px);
-        font-weight: $font-weight-bold;
+		&__children {
+			&__item {
+				display: block;
+				margin-top: rem(15px);
+				font-size: rem(22px);
+				font-weight: $font-weight-bold;
 
-        &--sub {
-          margin-top: 0;
-          font-size: $font-size;
-          font-weight: 400;
-        }
-      }
-    }
-  }
+				&--sub {
+					margin-top: 0;
+					font-size: $font-size;
+					font-weight: 400;
+				}
+			}
+		}
+	}
 
-  .main {
-    flex: 1 1 auto;
-    padding: rem(20px 100px);
+	.main {
+		flex: 1 1 auto;
+		padding: rem(20px 100px);
 
-    &__content {
-      margin: 0 auto;
-      width: rem(800px);
+		&__content {
+			margin: 0 auto;
+			width: rem(800px);
 
-      &__title {
-        &--level-1 {
-          margin-bottom: rem(40px);
-        }
+			&__title {
+				&--level-1 {
+					margin-bottom: rem(40px);
+				}
 
-        &--level-2 {
-          margin: rem(40px 0 20px 0);
-        }
+				&--level-2 {
+					margin: rem(40px 0 20px 0);
+				}
 
-        &--level-3 {
-          margin: rem(40px 0 20px 0);
-        }
+				&--level-3 {
+					margin: rem(40px 0 20px 0);
+				}
 
-        &__permalink {
-          &:focus,
-          &:hover {
-            color: $grey;
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
+				&__permalink {
+					&:focus,
+					&:hover {
+						color: $grey;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
 
-  .description {
-    margin-bottom: rem(20px);
-  }
+	.description {
+		margin-bottom: rem(20px);
+	}
 
-  .colors {
-    display: flex;
-    align-items: stretch;
-    flex-wrap: wrap;
-    font-size: $font-size-small;
+	.colors {
+		display: flex;
+		align-items: stretch;
+		flex-wrap: wrap;
+		font-size: $font-size-small;
 
-    &__item {
-      flex: 0 0 auto;
-      width: rem(220px);
-      height: rem(140px);
-      margin-right: rem(20px);
-      margin-bottom: rem(20px);
-    }
-  }
+		&__item {
+			flex: 0 0 auto;
+			width: rem(220px);
+			height: rem(140px);
+			margin-right: rem(20px);
+			margin-bottom: rem(20px);
+		}
+	}
 
-  .color {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border: rem(1px solid $grey);
-    background: rgb(255, 255, 255);
+	.color {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		border: rem(1px solid $grey);
+		background: rgb(255, 255, 255);
 
-    &__figure {
-      height: 40%;
-    }
+		&__figure {
+			height: 40%;
+		}
 
-    &__caption {
-      display: flex;
-      flex-direction: column;
-      padding: rem(5px);
+		&__caption {
+			display: flex;
+			flex-direction: column;
+			padding: rem(5px);
 
-      &__name {
-        font-weight: bold;
-      }
+			&__name {
+				font-weight: bold;
+			}
 
-      &__code {
-        color: $grey;
-      }
-    }
-  }
+			&__code {
+				color: $grey;
+			}
+		}
+	}
 
-  .parameters {
-    &__title {
-      font-weight: $font-weight-bold;
-    }
+	.parameters {
+		&__title {
+			font-weight: $font-weight-bold;
+		}
 
-    &__list {
-      display: table;
-      margin-bottom: rem(20px);
+		&__list {
+			display: table;
+			margin-bottom: rem(20px);
 
-      &__item {
-        display: table-row;
+			&__item {
+				display: table-row;
 
-        &__description {
-          display: table-cell;
-        }
+				&__description {
+					display: table-cell;
+				}
 
-        &__name {
-          display: table-cell;
-          padding-right: rem(20px);
-        }
-      }
-    }
-  }
+				&__name {
+					display: table-cell;
+					padding-right: rem(20px);
+				}
+			}
+		}
+	}
 
-  .example {
-    border-left: rem(20px solid $black);
-    margin-bottom: rem(20px);
-    padding-left: rem(20px);
+	.example {
+		border-left: rem(20px solid $black);
+		margin-bottom: rem(20px);
+		padding-left: rem(20px);
 
-    &__title {
-      margin-bottom: rem(20px);
-      font-family: $font-family-title;
-      font-size: rem(30px);
-      font-weight: $font-weight-bold;
-    }
+		&__title {
+			margin-bottom: rem(20px);
+			font-family: $font-family-title;
+			font-size: rem(30px);
+			font-weight: $font-weight-bold;
+		}
 
-    &__description {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: rem(10px);
-    }
+		&__description {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: rem(10px);
+		}
 
-    &__visual {
-      margin-bottom: rem(30px);
-    }
+		&__visual {
+			margin-bottom: rem(30px);
+		}
 
-    &__code {
-      display: block;
-      padding: rem(10px);
-      overflow-x: auto;
-      background-color: $black;
-      color: $grey-light;
-    }
-  }
+		&__code {
+			display: block;
+			padding: rem(10px);
+			overflow-x: auto;
+			background-color: $black;
+			color: $grey-light;
+		}
+	}
 
-  .source {
-    font-size: $font-size-small;
-  }
+	.source {
+		font-size: $font-size-small;
+	}
 
-  .link {
-    font-size: $font-size-small;
-  }
+	.link {
+		font-size: $font-size-small;
+	}
 }
