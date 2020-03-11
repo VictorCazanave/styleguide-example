@@ -52,14 +52,15 @@ In order to make the development faster, I decided to use the KSS style guide ge
 
 ### Project Structure
 
-* `kss-config.json` contains the [options to run KSS CLI](https://github.com/kss-node/kss-node#using-the-command-line-tool)
-* `src/` contains the `.scss` files of the styles to present in the style guide
+* `kss-config.json` contains the [options to run KSS CLI](https://github.com/kss-node/kss-node#using-the-command-line-tool).
+* `src/` contains the `.scss` files of the styles to present in the style guide.
 * `template/` contains the files to customize the design of the style guide. It is not necessary and using the [default template](https://kss-node.github.io/kss-node/section-demo.html) or overriding the default styles work well too.
+* `docs/` contains the generated style guide files and is used for the GitHub page.
 
 ### Tips
 
 * In the `Markup` block of the KSS comments, the `class` attribute must include `{{ modifier_class }}` to generate all the variant styles (e.g. `Markup: <button class="button primary {{ modifier_class }}">Apply</button>`).
-* The `placeholder` KSS option allows to customize the placeholder text to use for the modifier classes (e.g. the default value generates `<button class="button primary [modifier_class]">Apply</button>`). However in this style guide all the modifier classes are actually pseudo-classes (`:focus`, `:disabled`...) and I did not find a way to remove the placeholder. Therefore I used an empty string, although it adds an extra space (e.g. `<button class="button primary ">Apply</button>`) 
+* The `placeholder` KSS option allows to customize the placeholder text to use for the modifier classes (e.g. the default value generates `<button class="button primary [modifier_class]">Apply</button>`). However in this style guide all the modifier classes are actually pseudo-classes (`:focus`, `:disabled`...) and I did not find a way to remove the placeholder. Therefore I used an empty string, although it adds an extra space (e.g. `<button class="button primary ">Apply</button>`).
 * The `custom` KSS option is very usefull to add custom properties to the KSS comments, but be careful to not use an existing property. Then they are accessible in the style guide template.
 * The style guide template is made with [handlebars](https://handlebarsjs.com/). Although the syntax is easy to understand, it is recommended to look at the [documentation](https://handlebarsjs.com/guide/) for advanced customization.
 

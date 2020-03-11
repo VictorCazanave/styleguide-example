@@ -4,7 +4,7 @@
  */
 module.exports = {
 	server: {
-		baseDir: 'styleguide',
+		baseDir: 'docs',
 		routes: {
 			"/dist": "dist"
 		}
@@ -14,6 +14,6 @@ module.exports = {
 	},
 	open: false,
 	notify: false,
-	files: ['dist/*', 'styleguide/*'],
+	files: ['dist/*', 'docs/*'],
 	watchEvents: ['add', 'change']
 };
