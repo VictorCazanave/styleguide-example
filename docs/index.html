@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="An example of living style guide using KSS" />
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="../dist/main.css"/>
+
+
+  <title>Style Guide</title>
+</head>
+
+<body id="kss-body">
+
+  <header class="sidebar">
+
+    <h1 class="sidebar__title">
+      Style Guide Example
+    </h1>
+
+    <nav>
+      <ul class="menu">
+        <li>
+          <a class="menu__item" href="./index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="menu__item" href="section-colors.html#kssref-colors">
+            Colors
+          </a>
+        </li>
+        <li>
+          <a class="menu__item" href="section-utilities.html#kssref-utilities">
+            Utilities
+          </a>
+          <ul class="menu__children">
+            <li>
+              <a class="menu__children__item "
+                href="section-utilities.html#kssref-utilities-functions">
+                Functions
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-functions-color-code">
+                color-code($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item "
+                href="section-utilities.html#kssref-utilities-mixins">
+                Mixins
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-search">
+                background-search($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-select">
+                background-select($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-checkbox">
+                background-checkbox($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-checkbox-checked">
+                background-checkbox-checked($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-radio">
+                background-radio($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-radio-checked">
+                background-radio-checked($color)
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="menu__item" href="section-layouts.html#kssref-layouts">
+            Layouts
+          </a>
+          <ul class="menu__children">
+            <li>
+              <a class="menu__children__item "
+                href="section-layouts.html#kssref-layouts-headings">
+                Headings
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item "
+                href="section-layouts.html#kssref-layouts-quotation">
+                Quotation
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="menu__item" href="section-components.html#kssref-components">
+            Components
+          </a>
+          <ul class="menu__children">
+            <li>
+              <a class="menu__children__item "
+                href="section-components.html#kssref-components-buttons">
+                Buttons
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-buttons-primary">
+                Primary button
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-buttons-secondary">
+                Secondary button
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item "
+                href="section-components.html#kssref-components-inputs">
+                Inputs
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-textbox">
+                Text box
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-searchbox">
+                Search box
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-select">
+                Select
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-checkbox">
+                Checkbox
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-radio">
+                Radio button
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <span class="main">
+    <main class="main__content">
+      <h1>Style Guide Example</h1>
+<p><em>An example of living style guide using <a href="http://warpspire.com/kss/">KSS</a></em></p>
+<h2>🎯 Purpose</h2>
+<p>The content of this style guide is not important because the purpose of this project is to practice <a href="https://www.npmjs.com/package/kss">kss-node</a> and list tips for a further real usage.</p>
+<p>The design is fully inspired by the awesome website <a href="https://every-layout.dev">every-layout.dev</a>.</p>
+<h2>🔨 Building Tools</h2>
+<p>In order to keep the building tools simple, I decided to use only npm scripts instead of a task runner (Grunt, Gulp...) or a module bundler (Webpack, Rollup...).</p>
+<h3>Dependencies</h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/chokidar-cli">chokidar-cli</a>: watch files and re-run build script when files have been modified during development</li>
+<li><a href="https://www.npmjs.com/package/browser-sync">browser-sync</a>: synchronize and update browser when files have been modified during development</li>
+<li><a href="https://www.npmjs.com/package/npm-run-all">npm-run-all</a>: run multiple npm scripts in parallel or sequential in a cross-platform way</li>
+<li><a href="https://www.npmjs.com/package/stylelint">stylelint</a> and <a href="https://www.npmjs.com/package/stylelint-scss">stylelint-scss</a>: lint SCSS code</li>
+</ul>
+<h3>Tips</h3>
+<ul>
+<li><code>npm-run-all</code> seems to work only with defined npm scripts (e.g. <code>run-p chokidar [options] browser-sync [options]</code> does not work). Although the documentation is pretty clear, it was not obvious to me as a first time user 😅</li>
+</ul>
+<h2>🎨 Styles</h2>
+<p>In order to make the code more flexible, I decided to use the Sass preprocessor (with SCSS syntax) instead of pure CSS.</p>
+<p>Any other preprocessor (LESS, Stylus...) is also a good choice.</p>
+<h3>Dependencies</h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/node-sass">node-sass</a>: compile <code>.scss</code> files to <code>.css</code></li>
+<li><a href="https://www.npmjs.com/package/node-sass-package-importer">node-sass-package-importer</a>: import easily dependencies from <code>node_modules</code> folder</li>
+<li><a href="https://www.npmjs.com/package/postcss-cli">postcss-cli</a> and <a href="are://www.npmjs.com/package/autoprefixer">autoprefixer</a>: prefix automatically CSS properties for the supported browers in the <code>.browserslistrc</code> file</li>
+<li><a href="https://www.npmjs.com/package/sass-rem">sass-rem</a>: convert <code>px</code> unit into <code>rem</code>, because when the user system is in Chinese, the minimum <code>font-size</code> is <code>12px</code> in Chrome (<a href="https://support.google.com/chrome/forum/AAAAP1KN0B0Q18nyAQimVo/?hl=es-419">very</a> <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=36429">old</a> <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=16875">bug</a> 😱)</li>
+</ul>
+<h3>TODO</h3>
+<ul>
+<li>Add minification of the generated <code>main.css</code> file for production</li>
+</ul>
+<h2>📖 Style Guide</h2>
+<p>In order to make the development faster, I decided to use the KSS style guide generator.</p>
+<p><a href="https://documentcss.com">DocumentCSS</a> and <a href="https://github.com/mpetrovich/stylemark">stylemark</a> may also work well.</p>
+<h3>Dependencies</h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/kss">kss</a>: generate the style guide</li>
+</ul>
+<h3>Project Structure</h3>
+<ul>
+<li><code>kss-config.json</code> contains the <a href="https://github.com/kss-node/kss-node#using-the-command-line-tool">options to run KSS CLI</a>.</li>
+<li><code>src/</code> contains the <code>.scss</code> files of the styles to present in the style guide.</li>
+<li><code>template/</code> contains the files to customize the design of the style guide. It is not necessary and using the <a href="https://kss-node.github.io/kss-node/section-demo.html">default template</a> or overriding the default styles work well too.</li>
+<li><code>docs/</code> contains the generated style guide files and is used for the GitHub page.</li>
+</ul>
+<h3>Tips</h3>
+<ul>
+<li>In the <code>Markup</code> block of the KSS comments, the <code>class</code> attribute must include <code>{{ modifier_class }}</code> to generate all the variant styles (e.g. <code>Markup: &lt;button class=&quot;button primary {{ modifier_class }}&quot;&gt;Apply&lt;/button&gt;</code>).</li>
+<li>The <code>placeholder</code> KSS option allows to customize the placeholder text to use for the modifier classes (e.g. the default value generates <code>&lt;button class=&quot;button primary [modifier_class]&quot;&gt;Apply&lt;/button&gt;</code>). However in this style guide all the modifier classes are actually pseudo-classes (<code>:focus</code>, <code>:disabled</code>...) and I did not find a way to remove the placeholder. Therefore I used an empty string, although it adds an extra space (e.g. <code>&lt;button class=&quot;button primary &quot;&gt;Apply&lt;/button&gt;</code>).</li>
+<li>The <code>custom</code> KSS option is very usefull to add custom properties to the KSS comments, but be careful to not use an existing property. Then they are accessible in the style guide template.</li>
+<li>The style guide template is made with <a href="https://handlebarsjs.com/">handlebars</a>. Although the syntax is easy to understand, it is recommended to look at the <a href="https://handlebarsjs.com/guide/">documentation</a> for advanced customization.</li>
+</ul>
+<h3>Useful Links</h3>
+<ul>
+<li><a href="https://github.com/kss-node/kss/blob/spec/SPEC.md">KSS Spec</a></li>
+<li><a href="https://github.com/kss-node/kss-node/wiki">KSS Wiki</a></li>
+<li><a href="https://kss-node.github.io/kss-node/section-demo.html">KSS Demo</a></li>
+<li><a href="https://communications.uoregon.edu/sites/all/modules/uobanner/uo-web-design-framework/styleguide/">KSS Real Example</a></li>
+<li><a href="https://css-tricks.com/build-style-guide-straight-sass/">Build a Style Guide Straight from Sass</a></li>
+</ul>
+
+    </main>
+    </div>
+
+    <script src="kss-assets/kss.js"></script>
+    
+
+</body>
+
+</html>

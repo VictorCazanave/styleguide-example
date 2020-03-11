@@ -1,0 +1,137 @@
+/*
+Colors
+
+The standard colors.
+
+Colors:
+$black: rgb(5, 5, 5) - Dark color
+$white: rgb(250, 250, 250) - Light color
+$grey: rgb(128, 128, 128) - Neutral color
+
+Styleguide: colors
+*/
+#kss-body {
+  display: flex;
+  align-items: stretch;
+  background-color: #fafafa;
+  color: #050505;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5; }
+  #kss-body .sidebar {
+    flex: 0 0 25rem;
+    padding: 1.25rem 1.875rem;
+    border-right: 0.125rem dashed #050505;
+    text-align: center; }
+    #kss-body .sidebar__title {
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 0.125rem solid #050505;
+      font-family: "Barlow Condensed", Helvetica, sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-transform: uppercase; }
+  #kss-body .menu {
+    list-style: none; }
+    #kss-body .menu__item {
+      display: block;
+      margin-top: 1.875rem;
+      font-family: "Barlow Condensed", Helvetica, sans-serif;
+      font-size: 1.875rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase; }
+      #kss-body .menu__item:focus, #kss-body .menu__item:hover {
+        text-decoration: underline; }
+    #kss-body .menu__children {
+      list-style: none; }
+      #kss-body .menu__children__item {
+        display: block;
+        margin-top: 0.9375rem;
+        font-size: 1.375rem;
+        font-weight: 700;
+        text-decoration: none; }
+        #kss-body .menu__children__item:focus, #kss-body .menu__children__item:hover {
+          text-decoration: underline; }
+        #kss-body .menu__children__item--sub {
+          margin-top: 0;
+          font-size: 1.25rem;
+          font-weight: 400; }
+  #kss-body .main {
+    flex: 1 1 auto;
+    padding: 1.25rem 6.25rem; }
+    #kss-body .main__content {
+      margin: 0 auto;
+      width: 50rem; }
+      #kss-body .main__content__permalink {
+        text-decoration: none; }
+        #kss-body .main__content__permalink:focus, #kss-body .main__content__permalink:hover {
+          color: gray;
+          text-decoration: none; }
+  #kss-body .description {
+    margin-bottom: 1.25rem; }
+  #kss-body .colors {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    list-style: none; }
+    #kss-body .colors__item {
+      flex: 0 0 auto;
+      width: 13.75rem;
+      height: 8.75rem;
+      margin-right: 1.25rem;
+      margin-bottom: 1.25rem; }
+  #kss-body .color {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0.0625rem solid gray;
+    background: white; }
+    #kss-body .color__figure {
+      height: 40%; }
+    #kss-body .color__caption {
+      display: flex;
+      flex-direction: column;
+      padding: 0.3125rem; }
+      #kss-body .color__caption__name {
+        font-weight: bold; }
+      #kss-body .color__caption__code {
+        color: gray; }
+  #kss-body .parameters__title {
+    font-weight: 700; }
+  #kss-body .parameters__list {
+    display: table;
+    margin-bottom: 1.25rem; }
+    #kss-body .parameters__list__item {
+      display: table-row; }
+      #kss-body .parameters__list__item__description {
+        display: table-cell; }
+      #kss-body .parameters__list__item__name {
+        display: table-cell;
+        padding-right: 1.25rem; }
+  #kss-body .example {
+    border-left: 1.25rem solid #050505;
+    margin-bottom: 1.25rem;
+    padding-left: 1.25rem; }
+    #kss-body .example__title {
+      margin-bottom: 1.25rem;
+      font-family: "Barlow Condensed", Helvetica, sans-serif;
+      font-size: 1.875rem;
+      font-weight: 700; }
+    #kss-body .example__description {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0.625rem; }
+    #kss-body .example__visual {
+      margin-bottom: 1.875rem; }
+    #kss-body .example__code {
+      display: block;
+      padding: 0.625rem;
+      overflow-x: auto;
+      background-color: #050505;
+      color: #e6e6e6; }
+  #kss-body .source {
+    font-size: 1rem; }
+  #kss-body .link {
+    font-size: 1rem; }

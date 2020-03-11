@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="An example of living style guide using KSS" />
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="../dist/main.css"/>
+
+
+  <title>Style Guide</title>
+</head>
+
+<body id="kss-body">
+
+  <header class="sidebar">
+
+    <h1 class="sidebar__title">
+      Style Guide Example
+    </h1>
+
+    <nav>
+      <ul class="menu">
+        <li>
+          <a class="menu__item" href="./index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="menu__item" href="section-colors.html#kssref-colors">
+            Colors
+          </a>
+        </li>
+        <li>
+          <a class="menu__item" href="section-utilities.html#kssref-utilities">
+            Utilities
+          </a>
+          <ul class="menu__children">
+            <li>
+              <a class="menu__children__item "
+                href="section-utilities.html#kssref-utilities-functions">
+                Functions
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-functions-color-code">
+                color-code($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item "
+                href="section-utilities.html#kssref-utilities-mixins">
+                Mixins
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-search">
+                background-search($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-select">
+                background-select($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-checkbox">
+                background-checkbox($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-checkbox-checked">
+                background-checkbox-checked($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-radio">
+                background-radio($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-radio-checked">
+                background-radio-checked($color)
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="menu__item" href="section-layouts.html#kssref-layouts">
+            Layouts
+          </a>
+          <ul class="menu__children">
+            <li>
+              <a class="menu__children__item "
+                href="section-layouts.html#kssref-layouts-headings">
+                Headings
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item "
+                href="section-layouts.html#kssref-layouts-quotation">
+                Quotation
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="menu__item" href="section-components.html#kssref-components">
+            Components
+          </a>
+          <ul class="menu__children">
+            <li>
+              <a class="menu__children__item "
+                href="section-components.html#kssref-components-buttons">
+                Buttons
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-buttons-primary">
+                Primary button
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-buttons-secondary">
+                Secondary button
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item "
+                href="section-components.html#kssref-components-inputs">
+                Inputs
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-textbox">
+                Text box
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-searchbox">
+                Search box
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-select">
+                Select
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-checkbox">
+                Checkbox
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-radio">
+                Radio button
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <span class="main">
+    <main class="main__content">
+
+      <h1 id="kssref-components">
+        <a class="main__content__permalink" href="#kssref-components">
+          Components
+        </a>
+      </h1>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>The standard UI components (buttons, form inputs...).</p>
+
+      </div>
+
+
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/components/components.scss#L1"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/components/components.scss, line 1</code>
+        </a>
+      </div>
+
+
+      <h2 id="kssref-components-buttons">
+        <a class="main__content__permalink" href="#kssref-components-buttons">
+          Buttons
+        </a>
+      </h2>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>The standard buttons.</p>
+
+      </div>
+
+
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/components/buttons.scss#L1"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/components/buttons.scss, line 1</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-components-buttons-primary">
+        <a class="main__content__permalink" href="#kssref-components-buttons-primary">
+          Primary button
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>A standard button for the main action on the page.</p>
+
+      </div>
+
+
+
+      <div class="example">
+        <div class="example__title">
+          Example
+        </div>
+
+        <div class="example__description">
+          Default styling
+        </div>
+
+        <div class="example__visual">
+          <button class="button primary ">Apply</button>
+        </div>
+
+        <div class="example__description">
+          <code>:focus</code>
+          Highlights when focused
+        </div>
+
+        <div class="example__visual">
+          <button class="button primary pseudo-class-focus">Apply</button>
+        </div>
+        <div class="example__description">
+          <code>:disabled</code>
+          Grays out when disabled
+        </div>
+
+        <div class="example__visual">
+          <button class="button primary pseudo-class-disabled">Apply</button>
+        </div>
+
+        <!-- Keep on same line -->
+        <pre class="example__code"><code><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button primary "</span>&gt;</span>Apply<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span></code></pre>
+      </div>
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/components/buttons.scss#L14"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/components/buttons.scss, line 14</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-components-buttons-secondary">
+        <a class="main__content__permalink" href="#kssref-components-buttons-secondary">
+          Secondary button
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>A standard button for the secondary action on the page.</p>
+
+      </div>
+
+
+
+      <div class="example">
+        <div class="example__title">
+          Example
+        </div>
+
+        <div class="example__description">
+          Default styling
+        </div>
+
+        <div class="example__visual">
+          <button class="button secondary ">Cancel</button>
+        </div>
+
+        <div class="example__description">
+          <code>:focus</code>
+          Highlights when focused
+        </div>
+
+        <div class="example__visual">
+          <button class="button secondary pseudo-class-focus">Cancel</button>
+        </div>
+        <div class="example__description">
+          <code>:disabled</code>
+          Grays out when disabled
+        </div>
+
+        <div class="example__visual">
+          <button class="button secondary pseudo-class-disabled">Cancel</button>
+        </div>
+
+        <!-- Keep on same line -->
+        <pre class="example__code"><code><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button secondary "</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span></code></pre>
+      </div>
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/components/buttons.scss#L37"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/components/buttons.scss, line 37</code>
+        </a>
+      </div>
+
+
+      <h2 id="kssref-components-inputs">
+        <a class="main__content__permalink" href="#kssref-components-inputs">
+          Inputs
+        </a>
+      </h2>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>The standard inputs.</p>
+
+      </div>
+
+
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/components/inputs.scss#L1"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/components/inputs.scss, line 1</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-components-inputs-textbox">
+        <a class="main__content__permalink" href="#kssref-components-inputs-textbox">
+          Text box
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>A standard text box.</p>
+
+      </div>
+
+
+
+      <div class="example">
+        <div class="example__title">
+          Example
+        </div>
+
+        <div class="example__description">
+          Default styling
+        </div>
+
+        <div class="example__visual">
+          <input type="text" placeholder="Enter a text" class="box text "/>
+        </div>
+
+        <div class="example__description">
+          <code>:focus</code>
+          Highlights when focused
+        </div>
+
+        <div class="example__visual">
+          <input type="text" placeholder="Enter a text" class="box text pseudo-class-focus"/>
+        </div>
+        <div class="example__description">
+          <code>:disabled</code>
+          Grays out when disabled
+        </div>
+
+        <div class="example__visual">
+          <input type="text" placeholder="Enter a text" class="box text pseudo-class-disabled"/>
+        </div>
+
+        <!-- Keep on same line -->
+        <pre class="example__code"><code><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter a text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box text "</span>/&gt;</span></span></code></pre>
+      </div>
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/components/inputs.scss#L26"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/components/inputs.scss, line 26</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-components-inputs-searchbox">
+        <a class="main__content__permalink" href="#kssref-components-inputs-searchbox">
+          Search box
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>A standard search box.</p>
+
+      </div>
+
+
+
+      <div class="example">
+        <div class="example__title">
+          Example
+        </div>
+
+        <div class="example__description">
+          Default styling
+        </div>
+
+        <div class="example__visual">
+          <input type="search" placeholder="Search something" class="box search "/>
+        </div>
+
+        <div class="example__description">
+          <code>:focus</code>
+          Highlights when focused
+        </div>
+
+        <div class="example__visual">
+          <input type="search" placeholder="Search something" class="box search pseudo-class-focus"/>
+        </div>
+        <div class="example__description">
+          <code>:disabled</code>
+          Grays out when disabled
+        </div>
+
+        <div class="example__visual">
+          <input type="search" placeholder="Search something" class="box search pseudo-class-disabled"/>
+        </div>
+
+        <!-- Keep on same line -->
+        <pre class="example__code"><code><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"search"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Search something"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box search "</span>/&gt;</span></span></code></pre>
+      </div>
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/components/inputs.scss#L44"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/components/inputs.scss, line 44</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-components-inputs-select">
+        <a class="main__content__permalink" href="#kssref-components-inputs-select">
+          Select
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>A standard select.</p>
+
+      </div>
+
+
+
+      <div class="example">
+        <div class="example__title">
+          Example
+        </div>
+
+        <div class="example__description">
+          Default styling
+        </div>
+
+        <div class="example__visual">
+          <select class="box select ">
+	<option value="" disabled selected>Select an option</option>
+	<option value="1">Option 1</option>
+	<option value="2">Option 2</option>
+  </select>
+        </div>
+
+        <div class="example__description">
+          <code>:focus</code>
+          Highlights when focused
+        </div>
+
+        <div class="example__visual">
+          <select class="box select pseudo-class-focus">
+	<option value="" disabled selected>Select an option</option>
+	<option value="1">Option 1</option>
+	<option value="2">Option 2</option>
+  </select>
+        </div>
+        <div class="example__description">
+          <code>:disabled</code>
+          Grays out when disabled
+        </div>
+
+        <div class="example__visual">
+          <select class="box select pseudo-class-disabled">
+	<option value="" disabled selected>Select an option</option>
+	<option value="1">Option 1</option>
+	<option value="2">Option 2</option>
+  </select>
+        </div>
+
+        <!-- Keep on same line -->
+        <pre class="example__code"><code><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box select "</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">selected</span>&gt;</span>Select an option<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2"</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span></span></code></pre>
+      </div>
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/components/inputs.scss#L83"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/components/inputs.scss, line 83</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-components-inputs-checkbox">
+        <a class="main__content__permalink" href="#kssref-components-inputs-checkbox">
+          Checkbox
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>A standard checkbox.</p>
+
+      </div>
+
+
+
+      <div class="example">
+        <div class="example__title">
+          Example
+        </div>
+
+        <div class="example__description">
+          Default styling
+        </div>
+
+        <div class="example__visual">
+          <input type="checkbox" class="choice check "/>
+        </div>
+
+        <div class="example__description">
+          <code>:focus</code>
+          Highlights when focused
+        </div>
+
+        <div class="example__visual">
+          <input type="checkbox" class="choice check pseudo-class-focus"/>
+        </div>
+        <div class="example__description">
+          <code>:disabled</code>
+          Grays out when disabled
+        </div>
+
+        <div class="example__visual">
+          <input type="checkbox" class="choice check pseudo-class-disabled"/>
+        </div>
+        <div class="example__description">
+          <code>:checked</code>
+          Indicates when checked
+        </div>
+
+        <div class="example__visual">
+          <input type="checkbox" class="choice check pseudo-class-checked"/>
+        </div>
+        <div class="example__description">
+          <code>:checked:focus</code>
+          Highlights when checked and focused
+        </div>
+
+        <div class="example__visual">
+          <input type="checkbox" class="choice check pseudo-class-checked pseudo-class-focus"/>
+        </div>
+        <div class="example__description">
+          <code>:checked:disabled</code>
+          Grays out when checked and disabled
+        </div>
+
+        <div class="example__visual">
+          <input type="checkbox" class="choice check pseudo-class-checked pseudo-class-disabled"/>
+        </div>
+
+        <!-- Keep on same line -->
+        <pre class="example__code"><code><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"choice check "</span>/&gt;</span></span></code></pre>
+      </div>
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/components/inputs.scss#L147"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/components/inputs.scss, line 147</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-components-inputs-radio">
+        <a class="main__content__permalink" href="#kssref-components-inputs-radio">
+          Radio button
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>A standard radio button.</p>
+
+      </div>
+
+
+
+      <div class="example">
+        <div class="example__title">
+          Example
+        </div>
+
+        <div class="example__description">
+          Default styling
+        </div>
+
+        <div class="example__visual">
+          <input type="radio" class="choice radio "/>
+        </div>
+
+        <div class="example__description">
+          <code>:focus</code>
+          Highlights when focused
+        </div>
+
+        <div class="example__visual">
+          <input type="radio" class="choice radio pseudo-class-focus"/>
+        </div>
+        <div class="example__description">
+          <code>:disabled</code>
+          Grays out when disabled
+        </div>
+
+        <div class="example__visual">
+          <input type="radio" class="choice radio pseudo-class-disabled"/>
+        </div>
+        <div class="example__description">
+          <code>:checked</code>
+          Indicates when checked
+        </div>
+
+        <div class="example__visual">
+          <input type="radio" class="choice radio pseudo-class-checked"/>
+        </div>
+        <div class="example__description">
+          <code>:checked:focus</code>
+          Highlights when checked and focused
+        </div>
+
+        <div class="example__visual">
+          <input type="radio" class="choice radio pseudo-class-checked pseudo-class-focus"/>
+        </div>
+        <div class="example__description">
+          <code>:checked:disabled</code>
+          Grays out when checked and disabled
+        </div>
+
+        <div class="example__visual">
+          <input type="radio" class="choice radio pseudo-class-checked pseudo-class-disabled"/>
+        </div>
+
+        <!-- Keep on same line -->
+        <pre class="example__code"><code><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"choice radio "</span>/&gt;</span></span></code></pre>
+      </div>
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/components/inputs.scss#L181"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/components/inputs.scss, line 181</code>
+        </a>
+      </div>
+
+
+    </main>
+    </div>
+
+    <script src="kss-assets/kss.js"></script>
+    
+
+</body>
+
+</html>

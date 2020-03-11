@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="An example of living style guide using KSS" />
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="../dist/main.css"/>
+
+
+  <title>Style Guide</title>
+</head>
+
+<body id="kss-body">
+
+  <header class="sidebar">
+
+    <h1 class="sidebar__title">
+      Style Guide Example
+    </h1>
+
+    <nav>
+      <ul class="menu">
+        <li>
+          <a class="menu__item" href="./index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="menu__item" href="section-colors.html#kssref-colors">
+            Colors
+          </a>
+        </li>
+        <li>
+          <a class="menu__item" href="section-utilities.html#kssref-utilities">
+            Utilities
+          </a>
+          <ul class="menu__children">
+            <li>
+              <a class="menu__children__item "
+                href="section-utilities.html#kssref-utilities-functions">
+                Functions
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-functions-color-code">
+                color-code($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item "
+                href="section-utilities.html#kssref-utilities-mixins">
+                Mixins
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-search">
+                background-search($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-select">
+                background-select($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-checkbox">
+                background-checkbox($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-checkbox-checked">
+                background-checkbox-checked($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-radio">
+                background-radio($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-radio-checked">
+                background-radio-checked($color)
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="menu__item" href="section-layouts.html#kssref-layouts">
+            Layouts
+          </a>
+          <ul class="menu__children">
+            <li>
+              <a class="menu__children__item "
+                href="section-layouts.html#kssref-layouts-headings">
+                Headings
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item "
+                href="section-layouts.html#kssref-layouts-quotation">
+                Quotation
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="menu__item" href="section-components.html#kssref-components">
+            Components
+          </a>
+          <ul class="menu__children">
+            <li>
+              <a class="menu__children__item "
+                href="section-components.html#kssref-components-buttons">
+                Buttons
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-buttons-primary">
+                Primary button
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-buttons-secondary">
+                Secondary button
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item "
+                href="section-components.html#kssref-components-inputs">
+                Inputs
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-textbox">
+                Text box
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-searchbox">
+                Search box
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-select">
+                Select
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-checkbox">
+                Checkbox
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-radio">
+                Radio button
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <span class="main">
+    <main class="main__content">
+
+      <h1 id="kssref-colors">
+        <a class="main__content__permalink" href="#kssref-colors">
+          Colors
+        </a>
+      </h1>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>The standard colors.</p>
+
+      </div>
+
+      <ul class="colors">
+        <li class="colors__item">
+          <figure class="color">
+            <div class="color__figure" style="background-color:rgb(5, 5, 5)"></div>
+            <figcaption class="color__caption">
+              <span class="color__caption__name">$black</span>
+              <code class="color__caption__code">rgb(5, 5, 5)</code>
+              <p>Dark color</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="colors__item">
+          <figure class="color">
+            <div class="color__figure" style="background-color:rgb(250, 250, 250)"></div>
+            <figcaption class="color__caption">
+              <span class="color__caption__name">$white</span>
+              <code class="color__caption__code">rgb(250, 250, 250)</code>
+              <p>Light color</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="colors__item">
+          <figure class="color">
+            <div class="color__figure" style="background-color:rgb(128, 128, 128)"></div>
+            <figcaption class="color__caption">
+              <span class="color__caption__name">$grey</span>
+              <code class="color__caption__code">rgb(128, 128, 128)</code>
+              <p>Neutral color</p>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/config/variables.scss#L8"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/config/variables.scss, line 8</code>
+        </a>
+      </div>
+
+
+    </main>
+    </div>
+
+    <script src="kss-assets/kss.js"></script>
+    
+
+</body>
+
+</html>

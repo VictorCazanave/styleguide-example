@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="An example of living style guide using KSS" />
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="../dist/main.css"/>
+
+
+  <title>Style Guide</title>
+</head>
+
+<body id="kss-body">
+
+  <header class="sidebar">
+
+    <h1 class="sidebar__title">
+      Style Guide Example
+    </h1>
+
+    <nav>
+      <ul class="menu">
+        <li>
+          <a class="menu__item" href="./index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="menu__item" href="section-colors.html#kssref-colors">
+            Colors
+          </a>
+        </li>
+        <li>
+          <a class="menu__item" href="section-utilities.html#kssref-utilities">
+            Utilities
+          </a>
+          <ul class="menu__children">
+            <li>
+              <a class="menu__children__item "
+                href="section-utilities.html#kssref-utilities-functions">
+                Functions
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-functions-color-code">
+                color-code($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item "
+                href="section-utilities.html#kssref-utilities-mixins">
+                Mixins
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-search">
+                background-search($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-select">
+                background-select($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-checkbox">
+                background-checkbox($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-checkbox-checked">
+                background-checkbox-checked($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-radio">
+                background-radio($color)
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-utilities.html#kssref-utilities-mixins-background-radio-checked">
+                background-radio-checked($color)
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="menu__item" href="section-layouts.html#kssref-layouts">
+            Layouts
+          </a>
+          <ul class="menu__children">
+            <li>
+              <a class="menu__children__item "
+                href="section-layouts.html#kssref-layouts-headings">
+                Headings
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item "
+                href="section-layouts.html#kssref-layouts-quotation">
+                Quotation
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="menu__item" href="section-components.html#kssref-components">
+            Components
+          </a>
+          <ul class="menu__children">
+            <li>
+              <a class="menu__children__item "
+                href="section-components.html#kssref-components-buttons">
+                Buttons
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-buttons-primary">
+                Primary button
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-buttons-secondary">
+                Secondary button
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item "
+                href="section-components.html#kssref-components-inputs">
+                Inputs
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-textbox">
+                Text box
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-searchbox">
+                Search box
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-select">
+                Select
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-checkbox">
+                Checkbox
+              </a>
+            </li>
+            <li>
+              <a class="menu__children__item menu__children__item--sub"
+                href="section-components.html#kssref-components-inputs-radio">
+                Radio button
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <span class="main">
+    <main class="main__content">
+
+      <h1 id="kssref-utilities">
+        <a class="main__content__permalink" href="#kssref-utilities">
+          Utilities
+        </a>
+      </h1>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>The SCSS utilities.</p>
+
+      </div>
+
+
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/utilities/utilities.scss#L1"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/utilities/utilities.scss, line 1</code>
+        </a>
+      </div>
+
+
+      <h2 id="kssref-utilities-functions">
+        <a class="main__content__permalink" href="#kssref-utilities-functions">
+          Functions
+        </a>
+      </h2>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>The custom SCSS functions.</p>
+
+      </div>
+
+
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/utilities/functions.scss#L1"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/utilities/functions.scss, line 1</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-utilities-functions-color-code">
+        <a class="main__content__permalink" href="#kssref-utilities-functions-color-code">
+          color-code($color)
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>Returns the code of the color to inject it in an svg background.</p>
+<p>For example: <code>color-code(#001122)</code> returns <code>&quot;001122&quot;</code>.</p>
+
+      </div>
+
+
+      <div class="parameters__title">
+        Parameters:
+      </div>
+      <ul class="parameters__list">
+        <li class="parameters__list__item">
+          <code class="parameters__list__item__name">$color</code>
+          <span class="parameters__list__item__description">
+            The color to decode
+          </span>
+        </li>
+      </ul>
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/utilities/functions.scss#L9"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/utilities/functions.scss, line 9</code>
+        </a>
+      </div>
+
+      <div class="link">
+        Based on:
+        <a href="https://github.com/alsacreations/KNACSS/blob/master/sass/components/_checkbox.scss#L84" target="_blank" rel="noopener noreferrer">
+          <code>https://github.com/alsacreations/KNACSS/blob/master/sass/components/_checkbox.scss#L84</code>
+        </a>
+      </div>
+
+      <h2 id="kssref-utilities-mixins">
+        <a class="main__content__permalink" href="#kssref-utilities-mixins">
+          Mixins
+        </a>
+      </h2>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>The custom SCSS mixins.</p>
+
+      </div>
+
+
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/utilities/mixins.scss#L1"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/utilities/mixins.scss, line 1</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-utilities-mixins-background-search">
+        <a class="main__content__permalink" href="#kssref-utilities-mixins-background-search">
+          background-search($color)
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>Creates a background image for the search input.</p>
+
+      </div>
+
+
+      <div class="parameters__title">
+        Parameters:
+      </div>
+      <ul class="parameters__list">
+        <li class="parameters__list__item">
+          <code class="parameters__list__item__name">$color</code>
+          <span class="parameters__list__item__description">
+            The color of the image
+          </span>
+        </li>
+      </ul>
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/utilities/mixins.scss#L9"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/utilities/mixins.scss, line 9</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-utilities-mixins-background-select">
+        <a class="main__content__permalink" href="#kssref-utilities-mixins-background-select">
+          background-select($color)
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>Creates a background image for the select input.</p>
+
+      </div>
+
+
+      <div class="parameters__title">
+        Parameters:
+      </div>
+      <ul class="parameters__list">
+        <li class="parameters__list__item">
+          <code class="parameters__list__item__name">$color</code>
+          <span class="parameters__list__item__description">
+            The color of the image
+          </span>
+        </li>
+      </ul>
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/utilities/mixins.scss#L24"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/utilities/mixins.scss, line 24</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-utilities-mixins-background-checkbox">
+        <a class="main__content__permalink" href="#kssref-utilities-mixins-background-checkbox">
+          background-checkbox($color)
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>Creates a background image for the checkbox input.</p>
+
+      </div>
+
+
+      <div class="parameters__title">
+        Parameters:
+      </div>
+      <ul class="parameters__list">
+        <li class="parameters__list__item">
+          <code class="parameters__list__item__name">$color</code>
+          <span class="parameters__list__item__description">
+            The color of the image
+          </span>
+        </li>
+      </ul>
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/utilities/mixins.scss#L39"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/utilities/mixins.scss, line 39</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-utilities-mixins-background-checkbox-checked">
+        <a class="main__content__permalink" href="#kssref-utilities-mixins-background-checkbox-checked">
+          background-checkbox-checked($color)
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>Creates a background image for the checked checkbox input.</p>
+
+      </div>
+
+
+      <div class="parameters__title">
+        Parameters:
+      </div>
+      <ul class="parameters__list">
+        <li class="parameters__list__item">
+          <code class="parameters__list__item__name">$color</code>
+          <span class="parameters__list__item__description">
+            The color of the image
+          </span>
+        </li>
+      </ul>
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/utilities/mixins.scss#L54"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/utilities/mixins.scss, line 54</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-utilities-mixins-background-radio">
+        <a class="main__content__permalink" href="#kssref-utilities-mixins-background-radio">
+          background-radio($color)
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>Creates a background image for the radio input.</p>
+
+      </div>
+
+
+      <div class="parameters__title">
+        Parameters:
+      </div>
+      <ul class="parameters__list">
+        <li class="parameters__list__item">
+          <code class="parameters__list__item__name">$color</code>
+          <span class="parameters__list__item__description">
+            The color of the image
+          </span>
+        </li>
+      </ul>
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/utilities/mixins.scss#L69"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/utilities/mixins.scss, line 69</code>
+        </a>
+      </div>
+
+
+      <h3 id="kssref-utilities-mixins-background-radio-checked">
+        <a class="main__content__permalink" href="#kssref-utilities-mixins-background-radio-checked">
+          background-radio-checked($color)
+        </a>
+      </h3>
+
+      <!-- Cannot use <p> because it messes up HTML -->
+      <div class="description">
+        <p>Creates a background image for the checked radio input.</p>
+
+      </div>
+
+
+      <div class="parameters__title">
+        Parameters:
+      </div>
+      <ul class="parameters__list">
+        <li class="parameters__list__item">
+          <code class="parameters__list__item__name">$color</code>
+          <span class="parameters__list__item__description">
+            The color of the image
+          </span>
+        </li>
+      </ul>
+
+
+      <div class="source">
+        Source:
+        <a href="https://github.com/VictorCazanave/styleguide-example/blob/master/src/utilities/mixins.scss#L84"
+          target="_blank" rel="noopener noreferrer">
+          <code>src/utilities/mixins.scss, line 84</code>
+        </a>
+      </div>
+
+
+    </main>
+    </div>
+
+    <script src="kss-assets/kss.js"></script>
+    
+
+</body>
+
+</html>
