@@ -8,6 +8,13 @@ The content of this style guide is not important because the purpose of this pro
 
 The design is fully inspired by the awesome website [every-layout.dev](https://every-layout.dev).
 
+## 👨‍💻 Development
+
+1. Install all the dependencies: `npm install`
+2. Start the development server: `npm run dev`
+3. Open a browser to `http://localhost:3000`
+4. Modify the files in `src/` and `template/` folders
+
 ## 🔨 Building Tools
 
 In order to keep the building tools simple, I decided to use only npm scripts instead of a task runner (Grunt, Gulp...) or a module bundler (Webpack, Rollup...).
