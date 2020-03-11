@@ -4,16 +4,13 @@
  */
 module.exports = {
 	server: {
-		baseDir: 'docs',
-		routes: {
-			"/dist": "dist"
-		}
+		baseDir: 'docs'
 	},
 	ui: {
 		port: 3000
 	},
 	open: false,
 	notify: false,
-	files: ['dist/*', 'docs/*'],
+	files: 'docs/*',
 	watchEvents: ['add', 'change']
 };
